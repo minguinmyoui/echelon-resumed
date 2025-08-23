@@ -60,7 +60,7 @@ async function waitForElement(query, parent = this.document, timeout = 10000)
 		// window. The maximum depth that it can attain is the signed 32-bit integer maximum (2,147,483,647)
 		//
 		// https://github.com/mozilla-firefox/firefox/blob/5cc1a7909a4e4abb7db47926c88c2d173158e9d2/dom/base/RequestCallbackManager.h#L47-L50
-		if (timeout > -1 && Date.now > startTime + timeout)
+		if (timeout > -1 && Date.now() > startTime + timeout)
 		{
 			return null;
 		}
